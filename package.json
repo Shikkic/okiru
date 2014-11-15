@@ -1,0 +1,22 @@
+{
+  "name": "okiru",
+  "version": "1.0.0",
+  "description": "okiru ===== HackRPI - 11/15/2014",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shikkic/okiru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shikkic/okiru/issues"
+  },
+  "homepage": "https://github.com/Shikkic/okiru",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}
