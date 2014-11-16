@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+	<head>
+		<title>Okiru</title>
+		
+		<!--Webapp metadata-->
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="Alarm, clock, alarm clock, okiru, wake up, time, get up, sleepy, sleep, timer"/>
+		<meta name="description" content="The internet alarm clock you can rely on. Set up an alarm for any day and any time, and never be late to 
+										  a meeting again!" />
+		<meta name="author" content="Vuk Petrovic, Dan Cadden, Gin Zukas, Dan Ruiz" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<!--CSS Markup-->
+		<link rel="stylesheet" type="text/css" href="bootstrap.css" /> 
+		<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="setup.css" /> 
+		<link rel="stylesheet" type="text/css" href="select.css" /> 
+		
+		<!--Javascript-->
+		<script src="jquery-2.1.1.js"></script>
+		<script src="bootstrap.js"></script> 
+		<script src="picker.js"></script>
+		<script src="picker.time.js"></script>
+		
+	</head>
+	
+	<body>
+		<div class="container-fluid main-banner"> 
+			<div class="logo" id="siteLogo">
+				<div id="center">
+					<div id="logo-img"></div>
+					<h1 id="title">kiru</h1>
+				</div>
+				<h3 id="slogan">Where sleeping in truly pays.</h3>
+			</div>
+		</div> 
+		
+		<!--Main App Area-->
+		<div class="container-fluid">
+			<div id="main"> 
+				
+				<!--Phone Number-->
+				<div class="container-fluid number">
+					<div id="center-phone-num">
+						<div class="input-group" id="num">
+							<span class="input-group-addon phone-input">#</span>
+							<input type="text" class="form-control phone-input" placeholder="(555)-555-5555" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="container-fluid data">
+					<div id="center-data">
+						
+					</div>
+					
+					<div class="container-fluid">
+						<div id="center-submit">
+							<button type="button" class="btn btn-default submit-form">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,174 @@
+
+/*Okiru web-app custom CSS file*/
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 250px;
+	background-image: url('clouds.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-banner {
+	width: 100%;
+	height: 180px;
+	image-repeat: no-repeat;
+	image-size: 100% auto;
+}
+
+.logo {
+	height: 100%;
+	width: 305px;
+	margin: 0 auto;
+}
+
+#title {
+	float: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top: 60px;
+	margin-left: 5px;
+	font-size: 80px;
+	color: white;
+}
+
+#center {
+	width: 242px;
+	margin: 0 auto;
+}
+
+#slogan {
+	clear: both;
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top: 2px;
+	font-size: 14px;
+	color: white;
+}
+
+#logo-img {
+	margin-top: 15px;
+	float: left;
+	background-image: url('clock1_white.png');
+	width: 93px;
+	height: 128px;
+	image-repeat: no-repeat;
+}
+
+#main {
+	min-width: 385px;
+	min-height: 442px;
+	position: absolute;
+	top: 180px;
+	bottom: 30px;
+	left: 3%;
+	right: 3%;
+	background-color: rgba(255, 255, 255, 0.50);
+	border-radius: 8px;
+	margin-top: 10px;
+}	
+
+.number {
+	margin-top: 50px;
+}
+
+#num {
+	min-width: 200px;
+}
+
+#center-phone-num {
+	max-width: 700px;
+	width: 68%;
+	margin: 0 auto;
+}
+
+#num > input {
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.phone-input {
+	height: 70px;
+}
+
+#center-data {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 45px;
+	overflow: auto;
+}
+
+.table {
+	font-size: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Gloria Hallelujah', cursive;
+	width: 99%;
+}
+
+.time {
+	margin-top: 10px;
+	border-radius: 5px;
+	height: 30px;
+}
+
+#sun {
+	width: 100px;
+}
+
+#mon {
+	width: 110px;
+}
+
+#tue {
+	width: 120px;
+}
+
+#wed {
+	width: 160px;
+}
+
+#thur {
+	width: 135px;
+}
+
+#fri {
+	width: 90px;
+}
+
+#sat {
+	width: 135px;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #9ed5f7;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb { 
+	background-color: #f2fcff;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#center-submit {
+	width: 120px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.submit-form {
+	border-radius: 5px;
+	width: 120px;
+	height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+}

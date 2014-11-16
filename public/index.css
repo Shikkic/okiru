@@ -1,0 +1,103 @@
+
+/*Okiru web-app custom CSS file*/
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 250px;
+	background-image: url('clouds.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-banner {
+	width: 100%;
+	height: 180px;
+	image-repeat: no-repeat;
+	image-size: 100% auto;
+}
+
+.logo {
+	height: 100%;
+	width: 305px;
+	margin: 0 auto;
+}
+
+#title {
+	float: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top: 60px;
+	margin-left: 5px;
+	font-size: 80px;
+	color: white;
+}
+
+#center {
+	width: 242px;
+	margin: 0 auto;
+}
+
+#slogan {
+	clear: both;
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top: 2px;
+	font-size: 14px;
+	color: white;
+}
+
+#logo-img {
+	margin-top: 15px;
+	float: left;
+	background-image: url('clock1_white.png');
+	width: 93px;
+	height: 128px;
+	image-repeat: no-repeat;
+}
+
+#main {
+	min-width: 385px;
+	position: absolute;
+	top: 180px;
+	bottom: 30px;
+	left: 3%;
+	right: 3%;
+	background-color: rgba(255, 255, 255, 0.50);
+	border-radius: 8px;
+	margin-top: 10px;
+}	
+
+#venmo-logo {
+	float: left;
+	width: 150px;
+	height: 150px;
+	background-image: url('venmo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sign-in {
+	margin-top: 160px;
+}
+
+#venmo-login {
+	color: #888888;
+	float: left;
+	margin-left: 10px;
+	height: 150px;
+	width: 520px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: bold;
+	padding-top: 39px;
+	border-radius: 15px;
+	font-size: 45px;
+}
+
+#center-sign-in {
+	width: 680px;
+	height: 33px;
+	margin: 0 auto;
+}
+
