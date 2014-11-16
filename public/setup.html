@@ -66,11 +66,22 @@
 							i++;
 						}
 						
-						//alert(value);
 					}).keyup();
-					console.log(userData);
+					sendAjax(userData);
 				});
 			});
+		</script>
+		
+		<script>
+			function sendAjax(user) {
+				$.ajax({
+					type: "POST",
+					url: "test.php",
+					data: { phone: user[0], sun: user[1], mon: user[2], tue: user[3], wed: user[4], thu: user[5], fri: user[6], sat: user[7]}
+				}).done(function(msg) {
+					alert("Input has been saved: " + msg);
+				});
+			}
 		</script>
 		
 	</head>
