@@ -41,11 +41,11 @@
 							if(value.indexOf("A") >= 0) {
 								parseTime = value.split('A');
 								var a = parseTime[0].split(':');
-								var seconds = (+a[0]) * 60 * 60 + (+a[1]) * 60;
+								var seconds = (+a[0]) * 60 + (+a[1]);
 							} else if(value.indexOf("P") >= 0) {
 								parseTime = value.split('P');
 								var a = parseTime[0].split(':');
-							var seconds = (+a[0]) * 60 * 60 + (+a[1]) * 60;
+							var seconds = (+a[0]) * 60 + (+a[1]);
 							} else {
 								var seconds = -1;
 							}
@@ -76,10 +76,21 @@
 			function sendAjax(user) {
 				$.ajax({
 					type: "POST",
-					url: "test.php",
+					url: "/alarms",
 					data: { phone: user[0], sun: user[1], mon: user[2], tue: user[3], wed: user[4], thu: user[5], fri: user[6], sat: user[7]}
 				}).done(function(msg) {
-					alert("Input has been saved: " + msg);
+					$('#confirmation').fadeIn("slow", function() {
+						//Complete Animation
+					});
+					//alert("Input has been saved: " + msg);
+				});
+			}
+		</script>
+		
+		<script>
+			function fadeScreenIn() {
+				$('#confirmation').fadeOut("slow", function() {
+					//Animation Complete
 				});
 			}
 		</script>
@@ -87,6 +98,18 @@
 	</head>
 	
 	<body>
+		<div id="confirmation">
+			<div id="exit" onclick="fadeScreenIn();">
+			
+			</div>
+			<div id="message">
+				<h2>Your alarms have been saved, have some coffee!</h2>
+				<div id="coffee">
+					<img alt="Coffee" src="coffee.png" />
+				</div>
+			</div> 
+		</div>
+		
 		<div class="container-fluid main-banner"> 
 			<div class="logo" id="siteLogo">
 				<div id="center">
