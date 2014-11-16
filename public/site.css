@@ -10,7 +10,7 @@ html, body {
 
 .main-banner {
 	width: 100%;
-	height: 100px;
+	height: 160px;
 	background-image: url('banner_bg.jpg');
 	image-repeat: no-repeat;
 	image-size: 100% auto;
@@ -18,15 +18,24 @@ html, body {
 
 .logo {
 	height: 100%;
-	width: 20%;
+	width: 18.5%;
 	margin: 0 auto;
 }
 
 #title {
-	font-size: 25px;
+	float: left;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top: 60px;
+	margin-left: 5px;
+	font-size: 80px;
 	color: white;
 }
 
 #logo-img {
-	/*background-image: url('*/
+	margin-top: 15px;
+	float: left;
+	background-image: url('clock1_white.png');
+	width: 93px;
+	height: 128px;
+	image-repeat: no-repeat;
 }
