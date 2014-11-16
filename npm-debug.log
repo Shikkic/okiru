@@ -1,18 +1,145 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'save--', 'venmo' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
 4 verbose node symlink /usr/bin/node
-5 error install Couldn't read dependencies
-6 error package.json ENOENT, open '/home/dan/okiru/package.json'
-6 error package.json This is most likely not a problem with npm itself.
-6 error package.json npm can't find a package.json file in your current directory.
-7 error System Linux 3.16.0-23-generic
-8 error command "/usr/bin/node" "/usr/bin/npm" "install"
-9 error cwd /home/dan/okiru
-10 error node -v v0.10.33
-11 error npm -v 1.4.28
-12 error path /home/dan/okiru/package.json
-13 error code ENOPACKAGEJSON
-14 error errno 34
-15 verbose exit [ 34, true ]
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'save--', null ]
+7 verbose cache add name=undefined spec="save--" args=["save--",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'save--',
+8 verbose parsed url   path: 'save--',
+8 verbose parsed url   href: 'save--' }
+9 verbose cache add [ 'venmo', null ]
+10 verbose cache add name=undefined spec="venmo" args=["venmo",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'venmo',
+11 verbose parsed url   path: 'venmo',
+11 verbose parsed url   href: 'venmo' }
+12 silly lockFile 0ab90a81-save save--
+13 verbose lock save-- /home/dan/.npm/0ab90a81-save.lock
+14 silly lockFile 779e7811-venmo venmo
+15 verbose lock venmo /home/dan/.npm/779e7811-venmo.lock
+16 silly lockFile 0ab90a81-save save--
+17 silly lockFile 0ab90a81-save save--
+18 silly lockFile 779e7811-venmo venmo
+19 silly lockFile 779e7811-venmo venmo
+20 verbose addNamed [ 'save--', '' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile d38a0e40-save save--@
+23 verbose lock save--@ /home/dan/.npm/d38a0e40-save.lock
+24 verbose addNamed [ 'venmo', '' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile 6258e554-venmo venmo@
+27 verbose lock venmo@ /home/dan/.npm/6258e554-venmo.lock
+28 silly addNameRange { name: 'save--', range: '*', hasData: false }
+29 silly addNameRange { name: 'venmo', range: '*', hasData: false }
+30 verbose request where is /save--
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 1ffdedd94f5bc4c0
+33 verbose url raw /save--
+34 verbose url resolving [ 'https://registry.npmjs.org/', './save--' ]
+35 verbose url resolved https://registry.npmjs.org/save--
+36 verbose request where is https://registry.npmjs.org/save--
+37 info trying registry request attempt 1 at 07:53:44
+38 http GET https://registry.npmjs.org/save--
+39 verbose request where is /venmo
+40 verbose request registry https://registry.npmjs.org/
+41 verbose url raw /venmo
+42 verbose url resolving [ 'https://registry.npmjs.org/', './venmo' ]
+43 verbose url resolved https://registry.npmjs.org/venmo
+44 verbose request where is https://registry.npmjs.org/venmo
+45 info trying registry request attempt 1 at 07:53:45
+46 verbose etag "7H2ZQ31QVT8P6VHCP5PGZYIG1"
+47 http GET https://registry.npmjs.org/venmo
+48 http 404 https://registry.npmjs.org/save--
+49 verbose headers { date: 'Sun, 16 Nov 2014 07:53:45 GMT',
+49 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'cache-control': 'max-age=0',
+49 verbose headers   'content-length': '52',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   age: '0',
+49 verbose headers   'x-served-by': 'cache-ams4139-AMS',
+49 verbose headers   'x-cache': 'MISS',
+49 verbose headers   'x-cache-hits': '0',
+49 verbose headers   'x-timer': 'S1416124424.850844,VS0,VE652',
+49 verbose headers   'keep-alive': 'timeout=10, max=50',
+49 verbose headers   connection: 'Keep-Alive' }
+50 silly registry.get cb [ 404,
+50 silly registry.get   { date: 'Sun, 16 Nov 2014 07:53:45 GMT',
+50 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+50 silly registry.get     'content-type': 'application/json',
+50 silly registry.get     'cache-control': 'max-age=0',
+50 silly registry.get     'content-length': '52',
+50 silly registry.get     'accept-ranges': 'bytes',
+50 silly registry.get     via: '1.1 varnish',
+50 silly registry.get     age: '0',
+50 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+50 silly registry.get     'x-cache': 'MISS',
+50 silly registry.get     'x-cache-hits': '0',
+50 silly registry.get     'x-timer': 'S1416124424.850844,VS0,VE652',
+50 silly registry.get     'keep-alive': 'timeout=10, max=50',
+50 silly registry.get     connection: 'Keep-Alive' } ]
+51 silly lockFile d38a0e40-save save--@
+52 silly lockFile d38a0e40-save save--@
+53 http 304 https://registry.npmjs.org/venmo
+54 silly registry.get cb [ 304,
+54 silly registry.get   { date: 'Sun, 16 Nov 2014 07:53:44 GMT',
+54 silly registry.get     server: 'Apache',
+54 silly registry.get     via: '1.1 varnish',
+54 silly registry.get     'last-modified': 'Sun, 16 Nov 2014 07:53:45 GMT',
+54 silly registry.get     'cache-control': 'max-age=60',
+54 silly registry.get     etag: '"7H2ZQ31QVT8P6VHCP5PGZYIG1"',
+54 silly registry.get     age: '0',
+54 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+54 silly registry.get     'x-cache': 'MISS',
+54 silly registry.get     'x-cache-hits': '0',
+54 silly registry.get     'x-timer': 'S1416124424.838350,VS0,VE677',
+54 silly registry.get     vary: 'Accept',
+54 silly registry.get     'content-length': '0',
+54 silly registry.get     'keep-alive': 'timeout=10, max=50',
+54 silly registry.get     connection: 'Keep-Alive' } ]
+55 verbose etag https://registry.npmjs.org/venmo from cache
+56 silly addNameRange number 2 { name: 'venmo', range: '*', hasData: true }
+57 silly addNameRange versions [ 'venmo', [ '0.0.1', '0.0.2' ] ]
+58 verbose addNamed [ 'venmo', '0.0.2' ]
+59 verbose addNamed [ '0.0.2', '0.0.2' ]
+60 silly lockFile 3165b924-venmo-0-0-2 venmo@0.0.2
+61 verbose lock venmo@0.0.2 /home/dan/.npm/3165b924-venmo-0-0-2.lock
+62 silly lockFile 3165b924-venmo-0-0-2 venmo@0.0.2
+63 silly lockFile 3165b924-venmo-0-0-2 venmo@0.0.2
+64 silly lockFile 6258e554-venmo venmo@
+65 silly lockFile 6258e554-venmo venmo@
+66 error 404 404 Not Found: save--
+66 error 404
+66 error 404 'save--' is not in the npm registry.
+66 error 404 You should bug the author to publish it
+66 error 404 It was specified as a dependency of 'okiru'
+66 error 404
+66 error 404 Note that you can also install from a
+66 error 404 tarball, folder, or http url, or git url.
+67 error System Linux 3.16.0-23-generic
+68 error command "/usr/bin/node" "/usr/bin/npm" "install" "save--" "venmo"
+69 error cwd /home/dan/okiru
+70 error node -v v0.10.33
+71 error npm -v 1.4.28
+72 error code E404
+73 verbose exit [ 1, true ]

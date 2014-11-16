@@ -1,5 +1,4 @@
 module.exports = {
-  'url' : 'mongodb://localhost/mydb',
+  'url' : 'mongodb://localhost:27017/mydb',
   'name' : 'lol'
 };
-exports.number = 6; 
