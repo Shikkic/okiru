@@ -123,3 +123,22 @@ html, body {
 .phone-input {
 	height: 50px;
 }
+
+#center-data {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.table {
+	font-size: 25px;
+	font-family: 'Gloria Hallelujah', cursive;
+	width: 100%;
+}
+
+.time {
+	margin-top: 10px;
+	border-radius: 5px;
+	height: 30px;
+	width: 80px;
+}
