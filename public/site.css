@@ -15,3 +15,18 @@ html, body {
 	image-repeat: no-repeat;
 	image-size: 100% auto;
 }
+
+.logo {
+	height: 100%;
+	width: 20%;
+	margin: 0 auto;
+}
+
+#title {
+	font-size: 25px;
+	color: white;
+}
+
+#logo-img {
+	/*background-image: url('*/
+}
