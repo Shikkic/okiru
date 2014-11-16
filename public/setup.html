@@ -16,13 +16,23 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap.css" /> 
 		<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="setup.css" /> 
-		<link rel="stylesheet" type="text/css" href="select.css" /> 
+		<link rel="stylesheet" type="text/css" href="select.css" />
+		<link rel="stylesheet" type="text/css" href="pickadate.js-3.5.3/lib/themes/default.css" /> 
+		<link rel="stylesheet" type="text/css" href="pickadate.js-3.5.3/lib/themes/default.time.css" /> 
 		
 		<!--Javascript-->
 		<script src="jquery-2.1.1.js"></script>
 		<script src="bootstrap.js"></script> 
-		<script src="picker.js"></script>
-		<script src="picker.time.js"></script>
+		<script src="pickadate.js-3.5.3/lib/picker.js"></script>
+		<script src="pickadate.js-3.5.3/lib/picker.time.js"></script>
+		<script src="pickadate.js-3.5.3/lib/legacy.js"></script>
+		<script src="demo/scripts/demo.js"></script>
+		<script src="demo/scripts/rainbow.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.timepicker').pickatime();
+			});
+		</script>
 		
 	</head>
 	
@@ -53,7 +63,34 @@
 				
 				<div class="container-fluid data">
 					<div id="center-data">
-						
+						<div class="pair">
+							<div class="day">Sun</div>
+							<input type="text" class="timepicker time" />
+						</div>
+						<div class="pair">
+							<div class="day">Mon</div>
+							<input type="text" class="timepicker time" />
+						</div>
+						<div class="pair">
+							<div class="day">Tue</div>
+							<input type="text" class="timepicker time" />
+						</div>
+						<div class="pair">
+							<div class="day">Wed</div>
+							<input type="text" class="timepicker time" />
+						</div>
+						<div class="pair">
+							<div class="day">Thu</div>
+							<input type="text" class="timepicker time" />
+						</div>
+						<div class="pair">
+							<div class="day">Fri</div>
+							<input type="text" class="timepicker time" />
+						</div>
+						<div class="pair">
+							<div class="day">Sat</div>
+							<input type="text" class="timepicker time" />
+						</div>
 					</div>
 					
 					<div class="container-fluid">
@@ -62,6 +99,13 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		
+		<!--Footer-->
+		<div class="container-fluid">
+			<div class="copyright-container">
+				<p id="copyright-notice">Copyright &copy; 2014 - 2015 | Daniel Cadden, Gin Zukas, Sandile Keswa, Vuk Petrovic | All Rights Reserved</p>
 			</div>
 		</div>
 		
