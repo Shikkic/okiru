@@ -58,12 +58,10 @@ html, body {
 }
 
 #main {
-	min-width: 483px;
+	min-width: 385px;
 	position: absolute;
 	top: 180px;
 	bottom: 30px;
-	/*left: 280px;
-	right: 280px;*/
 	left: 3%;
 	right: 3%;
 	background-color: rgba(255, 255, 255, 0.50);
@@ -100,4 +98,28 @@ html, body {
 	width: 240px;
 	height: 33px;
 	margin: 0 auto;
+}
+
+.number {
+	margin-top: 30px;
+}
+
+#num {
+	min-width: 200px;
+}
+
+#center-phone-num {
+	max-width: 500px;
+	width: 40%;
+	margin: 0 auto;
+}
+
+#num > input {
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.phone-input {
+	height: 50px;
 }
