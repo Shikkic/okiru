@@ -28,9 +28,18 @@
 		<script src="pickadate.js-3.5.3/lib/legacy.js"></script>
 		<script src="demo/scripts/demo.js"></script>
 		<script src="demo/scripts/rainbow.js"></script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+		<script src=""http://malsup.github.com/jquery.form.js"></script> 
+		
 		<script>
 			$(document).ready(function() {
 				$('.timepicker').pickatime();
+				
+				//Sending form information to server
+				$('#callForm').ajaxForm(function() {
+					alert("Alarm information set!");
+				});
 			});
 		</script>
 		
@@ -49,57 +58,59 @@
 		
 		<!--Main App Area-->
 		<div class="container-fluid">
-			<div id="main"> 
-				
-				<!--Phone Number-->
-				<div class="container-fluid number">
-					<div id="center-phone-num">
-						<div class="input-group" id="num">
-							<span class="input-group-addon phone-input">#</span>
-							<input type="text" class="form-control phone-input" placeholder="(555)-555-5555" />
-						</div>
-					</div>
-				</div>
-				
-				<div class="container-fluid data">
-					<div id="center-data">
-						<div class="pair">
-							<div class="day">Sun</div>
-							<input type="text" class="timepicker time" />
-						</div>
-						<div class="pair">
-							<div class="day">Mon</div>
-							<input type="text" class="timepicker time" />
-						</div>
-						<div class="pair">
-							<div class="day">Tue</div>
-							<input type="text" class="timepicker time" />
-						</div>
-						<div class="pair">
-							<div class="day">Wed</div>
-							<input type="text" class="timepicker time" />
-						</div>
-						<div class="pair">
-							<div class="day">Thu</div>
-							<input type="text" class="timepicker time" />
-						</div>
-						<div class="pair">
-							<div class="day">Fri</div>
-							<input type="text" class="timepicker time" />
-						</div>
-						<div class="pair">
-							<div class="day">Sat</div>
-							<input type="text" class="timepicker time" />
+			<form id="callForm" action="/createAlarms" method="post">
+				<div id="main"> 
+					
+					<!--Phone Number-->
+					<div class="container-fluid number">
+						<div id="center-phone-num">
+							<div class="input-group" id="num">
+								<span class="input-group-addon phone-input">#</span>
+								<input type="text" class="form-control phone-input" placeholder="(555)-555-5555" />
+							</div>
 						</div>
 					</div>
 					
-					<div class="container-fluid">
-						<div id="center-submit">
-							<button type="button" class="btn btn-default submit-form">Submit</button>
+					<div class="container-fluid data">
+						<div id="center-data">
+							<div class="pair">
+								<div class="day">Sun</div>
+								<input type="text" class="timepicker time" />
+							</div>
+							<div class="pair">
+								<div class="day">Mon</div>
+								<input type="text" class="timepicker time" />
+							</div>
+							<div class="pair">
+								<div class="day">Tue</div>
+								<input type="text" class="timepicker time" />
+							</div>
+							<div class="pair">
+								<div class="day">Wed</div>
+								<input type="text" class="timepicker time" />
+							</div>
+							<div class="pair">
+								<div class="day">Thu</div>
+								<input type="text" class="timepicker time" />
+							</div>
+							<div class="pair">
+								<div class="day">Fri</div>
+								<input type="text" class="timepicker time" />
+							</div>
+							<div class="pair">
+								<div class="day">Sat</div>
+								<input type="text" class="timepicker time" />
+							</div>
+						</div>
+						
+						<div class="container-fluid">
+							<div id="center-submit">
+								<input type="submit" class="btn btn-default submit-form" value="Submit" />
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 		
 		<!--Footer-->
