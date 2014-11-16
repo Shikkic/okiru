@@ -7,3 +7,11 @@ html, body {
 	width: 100%;
 	height: auto;
 }
+
+.main-banner {
+	width: 100%;
+	height: 100px;
+	background-image: url('banner_bg.jpg');
+	image-repeat: no-repeat;
+	image-size: 100% auto;
+}
