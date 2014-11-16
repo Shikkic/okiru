@@ -16,7 +16,6 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap.css" /> 
 		<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="setup.css" /> 
-		<link rel="stylesheet" type="text/css" href="select.css" />
 		<link rel="stylesheet" type="text/css" href="pickadate.js-3.5.3/lib/themes/default.css" /> 
 		<link rel="stylesheet" type="text/css" href="pickadate.js-3.5.3/lib/themes/default.time.css" /> 
 		
@@ -26,11 +25,34 @@
 		<script src="pickadate.js-3.5.3/lib/picker.js"></script>
 		<script src="pickadate.js-3.5.3/lib/picker.time.js"></script>
 		<script src="pickadate.js-3.5.3/lib/legacy.js"></script>
-		<script src="demo/scripts/demo.js"></script>
-		<script src="demo/scripts/rainbow.js"></script>
+		
 		<script>
 			$(document).ready(function() {
 				$('.timepicker').pickatime();
+				
+				var userData = [];
+				var i = 0;
+				
+				$('.submit-form').click(function() {
+					$("input").keyup(function() {
+						var value = $(this).val();
+						if(i != 0) {
+							if(value.indexOf("A") >= 0) {
+								var parseTime = value.split('A');
+							} else if(value.indexOf("P") >= 0) {
+								var parseTime = value.split('P');
+							}
+							var a = parseTime[0].split(':');
+							var seconds = (+a[0]) * 60 * 60 + (+a[1]) * 60;
+							userData.push(seconds);
+						} else {
+							userData.push(value);
+							i++;
+						}
+						
+					}).keyup();
+					console.log(userData);
+				});
 			});
 		</script>
 		
@@ -56,7 +78,7 @@
 					<div id="center-phone-num">
 						<div class="input-group" id="num">
 							<span class="input-group-addon phone-input">#</span>
-							<input type="text" class="form-control phone-input" placeholder="(555)-555-5555" />
+							<input type="text" name="phone_number" class="form-control phone-input" placeholder="(555)-555-5555" />
 						</div>
 					</div>
 				</div>
@@ -65,31 +87,31 @@
 					<div id="center-data">
 						<div class="pair">
 							<div class="day">Sun</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="sun_time" class="timepicker time" />
 						</div>
 						<div class="pair">
 							<div class="day">Mon</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="mon_time" class="timepicker time" />
 						</div>
 						<div class="pair">
 							<div class="day">Tue</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="tue_time" class="timepicker time" />
 						</div>
 						<div class="pair">
 							<div class="day">Wed</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="wed_time" class="timepicker time" />
 						</div>
 						<div class="pair">
 							<div class="day">Thu</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="thu_time" class="timepicker time" />
 						</div>
 						<div class="pair">
 							<div class="day">Fri</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="fri_time" class="timepicker time" />
 						</div>
 						<div class="pair">
 							<div class="day">Sat</div>
-							<input type="text" class="timepicker time" />
+							<input type="text" name="sat_time" class="timepicker time" />
 						</div>
 					</div>
 					
