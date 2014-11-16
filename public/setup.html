@@ -37,19 +37,36 @@
 					$("input").keyup(function() {
 						var value = $(this).val();
 						if(i != 0) {
+							var parseTime = [];
 							if(value.indexOf("A") >= 0) {
-								var parseTime = value.split('A');
+								parseTime = value.split('A');
+								var a = parseTime[0].split(':');
+								var seconds = (+a[0]) * 60 * 60 + (+a[1]) * 60;
 							} else if(value.indexOf("P") >= 0) {
-								var parseTime = value.split('P');
-							}
-							var a = parseTime[0].split(':');
+								parseTime = value.split('P');
+								var a = parseTime[0].split(':');
 							var seconds = (+a[0]) * 60 * 60 + (+a[1]) * 60;
+							} else {
+								var seconds = -1;
+							}
+							
 							userData.push(seconds);
 						} else {
-							userData.push(value);
+							var parsePhone = "";
+							if(value.indexOf("(") >= 0) {
+								var temp = value.split("(");
+								var temp2 = temp[1].split(")");
+								var temp3 = temp2[1].split("-");
+								parsePhone = "" + temp2[0] + temp3[1] + temp3[2];
+							} else {
+								parsePhone = value.split("-");
+								parsePhone = "" + parsePhone[0] + parsePhone[1] + parsePhone[2];
+							}
+							userData.push(parsePhone);
 							i++;
 						}
 						
+						//alert(value);
 					}).keyup();
 					console.log(userData);
 				});
