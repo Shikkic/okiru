@@ -1,6 +1,6 @@
 okiru
 =====
-HackRPI - 11/15/2014 
+HackRPI - First Place Mobile Application Category Winner - 11/16/2014 
 
 Description: 
 A webapp utilizing the Twilio and Venmo APIs, hosted on Microsoft Azure. 
@@ -12,4 +12,4 @@ Project Contributors:
 Daniel Cadden
 Gin Zukas
 Vuk Petrovic
-Daniel Ruiz
+Sandile Keswa
